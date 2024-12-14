@@ -1,0 +1,64 @@
+/* Ogólne style dla całej strony */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('https://i.ytimg.com/vi/IdQ6tLSye5Y/sddefault.jpg'); /* Tło może być dowolne */
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.5); /* półprzezroczysta czarna warstwa */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    max-width: 600px;
+    width: 100%;
+}
+
+.header_text {
+    font-size: 2.5rem;
+    color: #fff;
+    margin-bottom: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.cytat_belmondo {
+    font-size: 1.3rem;
+    color: #fff;
+    font-style: italic;
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.1); /* półprzezroczyste tło dla cytatu */
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#quote {
+    margin-top: 20px;
+    font-size: 1.5rem;
+    line-height: 1.6;
+}
+
+/* Animacja tekstu dla cytatów */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+#quote {
+    animation: fadeIn 1.5s ease-in-out;
+}
